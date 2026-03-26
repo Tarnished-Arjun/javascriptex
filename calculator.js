@@ -27,5 +27,4 @@ switch (operator) {
     default:
         result = "Invalid operaton";
 }
-
 alert("Result: " + result);
