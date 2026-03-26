@@ -1,5 +1,4 @@
 let num = Number(prompt("Enter a number:"));
-
 let isPrime = true;
 if (num <= 1) {
     isPrime = false;
