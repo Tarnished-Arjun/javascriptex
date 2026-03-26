@@ -10,5 +10,4 @@ if (num1 >= num2 && num1 >= num3) {
 } else {
     greatest = num3;
 }
-
 alert("The greatest number is: " + greatest);
