@@ -1,13 +1,26 @@
-let num1 = Number(prompt("Enter first number:"));
-let num2 = Number(prompt("Enter second number:"));
-let num3 = Number(prompt("Enter third number:"));
-let greatest;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greatest of Three Numbers</title>
+</head>
+<body>
+<script>
+    let num1 = Number(prompt("Enter first number:"));
+    let num2 = Number(prompt("Enter second number:"));
+    let num3 = Number(prompt("Enter third number:"));
 
-if (num1 >= num2 && num1 >= num3) {
-    greatest = num1;
-} else if (num2 >= num1 && num2 >= num3) {
-    greatest = num2;
-} else {
-    greatest = num3;
-}
-alert("The greatest number is: " + greatest);
+    let greatest;
+
+    if (num1 >= num2 && num1 >= num3) {
+        greatest = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        greatest = num2;
+    } else {
+        greatest = num3;
+    }
+
+    alert("The greatest number is:" + greatest);
+</script>
+
+</body>
+</html>
