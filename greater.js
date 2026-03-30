@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 let num1 = Number(prompt("Enter first number:"));
 let num2 = Number(prompt("Enter second number:"));
 let num3 = Number(prompt("Enter third number:"));
@@ -11,4 +12,4 @@ if (num1 >= num2 && num1 >= num3) {
     greatest = num3;
 }
 
-alert("The greatest number is: " + greatest);
+console.log("The greatest number is: " + greatest);
