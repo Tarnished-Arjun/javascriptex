@@ -15,7 +15,5 @@ function isPalindrome(str) {
         return "Not a palindrome";
     }
 }
-
-// Example
 console.log(isPalindrome("racecar"));
 console.log(isPalindrome("hello"));
