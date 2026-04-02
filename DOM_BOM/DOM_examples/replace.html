@@ -1,0 +1,12 @@
+<div id="box">
+  <p id="old">Old</p>
+</div>
+
+<script>
+let newP = document.createElement("p");
+newP.innerHTML = "New";
+
+let parent = document.getElementById("box");
+let old = document.getElementById("old");
+parent.replaceChild(newP, old);
+</script>
