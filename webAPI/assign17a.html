@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>API Data</h2>
+<p id="output"></p>
+
+<script>
+async function getData() {
+  try {
+    
+    let response = await fetch("https://pro.ip-api.com/json/?key=xcrn7xnMDT8aFKv&fields=45740031");
+    
+  
+    let data = await response.json();
+
+   
+    document.getElementById("output").innerHTML =
+      "Country: " + data.country + "<br>" +
+      "Region: " + data.regionName + "<br>" +
+      "City: " + data.city + "<br>" +
+      "ISP: " + data.isp;
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+getData();
+</script>
+
+</body>
+</html>

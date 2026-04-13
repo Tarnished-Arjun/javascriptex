@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>PosT Data</h2>
+<button onclick="postData()">Send Data</button>
+
+<p id="output"></p>
+
+<script>
+async function postData() {
+  try {
+
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: "Hello",
+        body: "This is a test post",
+        userId: 1
+      })
+    });
+
+
+    let data = await response.json();
+
+
+    document.getElementById("output").innerHTML =
+      "ID: " + data.id + "<br>" +
+      "Title: " + data.title + "<br>" +
+      "Body: " + data.body;
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+</script>
+
+</body>
+</html>

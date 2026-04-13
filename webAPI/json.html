@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Job Details</h2>
+<p id="output"></p>
+
+<script>
+let job = {
+  jobid: 101,
+  title: "Software Developer",
+  skills: ["JavaScript", "HTML", "CSS"],
+  experience: 3years,
+  salary: 60000
+};
+
+document.getElementById("output").innerHTML =
+  "Job ID: " + job.jobid + "<br>" +
+  "Title: " + job.title + "<br>" +
+  "Skills: " + job.skills.join(", ") + "<br>" +
+  "Experience: " + job.experience + " years<br>" +
+  "Salary: " + job.salary;
+
+</script>
+
+</body>
+</html>
